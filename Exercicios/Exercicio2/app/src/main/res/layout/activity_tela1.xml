@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yasminmoraes.exercicio2.Tela1">
+
+    <EditText
+        android:id="@+id/et_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_nome"
+        android:layout_below="@+id/et_nome"
+        android:layout_marginTop="40dp"
+        android:id="@+id/rg_sexo">
+
+        <RadioButton
+            android:id="@+id/rb_masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/rb_feminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Feminino" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rg_sexo"
+        android:layout_below="@+id/rg_sexo"
+        android:layout_marginTop="35dp"
+        android:text="Interesses" />
+
+    <CheckBox
+        android:id="@+id/cb_musica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cb_filme"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="19dp"
+        android:text="Música" />
+
+    <CheckBox
+        android:id="@+id/cb_filme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/cb_musica"
+        android:text="Filme" />
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cb_filme"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="46dp"
+        android:text="Cadastrar" />
+
+    <Button
+        android:id="@+id/bt_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_cadastrar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="37dp"
+        android:text="Enviar" />
+
+</RelativeLayout>
