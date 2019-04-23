@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yasminmoraes.exerccio1.Tela1">
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="123dp"
+        android:text="Cadastrar" />
+
+    <Button
+        android:id="@+id/bt_editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bt_cadastrar"
+        android:layout_below="@+id/bt_cadastrar"
+        android:layout_marginTop="12dp"
+        android:text="Editar" />
+
+    <Button
+        android:id="@+id/bt_buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bt_editar"
+        android:layout_below="@+id/bt_editar"
+        android:layout_marginTop="13dp"
+        android:text="Buscar" />
+
+    <Button
+        android:id="@+id/bt_excluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bt_buscar"
+        android:layout_marginTop="11dp"
+        android:text="Excluir" />
+</RelativeLayout>
