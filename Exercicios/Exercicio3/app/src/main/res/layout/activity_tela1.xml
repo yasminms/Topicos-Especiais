@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yasminmoraes.exercicio3.Tela1">
+
+    <EditText
+        android:id="@+id/et_produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Produto"
+        android:inputType="textPersonName" />
+
+    <AutoCompleteTextView
+        android:id="@+id/act_estado_fisico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_produto"
+        android:layout_below="@+id/et_produto"
+        android:layout_marginTop="41dp"
+        android:hint="Estado físico" />
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="30dp"
+        android:text="Cadastrar" />
+
+    <Button
+        android:id="@+id/bt_listar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_cadastrar"
+        android:layout_alignBottom="@+id/bt_cadastrar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp"
+        android:text="Listar" />
+
+    <EditText
+        android:id="@+id/et_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_estado_fisico"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Peso"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/rg_unidade_medida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/et_peso"
+        android:layout_below="@+id/et_peso"
+        android:layout_marginTop="37dp">
+
+        <RadioButton
+            android:id="@+id/rb_grama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Grama" />
+
+        <RadioButton
+            android:id="@+id/rb_kilograma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kilograma" />
+
+        <RadioButton
+            android:id="@+id/rb_tonelada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tonelada" />
+    </RadioGroup>
+
+</RelativeLayout>
